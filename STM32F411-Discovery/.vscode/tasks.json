@@ -1,0 +1,69 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Flash Hardware",			
+			"command": "STM32_Programmer_CLI",
+			"args": [
+				"-c",
+				"port=SWD",
+				"mode=UR",
+				"reset=HWrst",
+				"-w",
+				"${workspaceFolder}/build/debug/build/source/STM32F411-Discovery.elf",
+				"-g"
+			],
+			"dependsOn": "CMake: build",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"type": "cmake",
+			"label": "CMake: clean rebuild",
+			"command": "cleanRebuild",
+			"targets": [
+				"all"
+			],
+			"preset": "${command:cmake.activeBuildPresetName}",
+			"group": "build",
+			"problemMatcher": [],
+			"detail": "CMake template clean rebuild task"
+		},
+		{
+			"type": "cmake",
+			"label": "CMake: configure",
+			"command": "configure",
+			"preset": "${command:cmake.activeConfigurePresetName}",
+			"problemMatcher": [],
+			"detail": "CMake template configure task"
+		},
+		{
+			"type": "cmake",
+			"label": "CMake: build",
+			"command": "build",
+			"targets": [
+				"all"
+			],
+			"preset": "${command:cmake.activeBuildPresetName}",
+			"group": "build",
+			"problemMatcher": [],
+			"detail": "CMake template build task"
+		},		
+		{
+			"type": "cmake",
+			"label": "CMake: build",
+			"command": "build",
+			"targets": [
+				"all"
+			],
+			"preset": "${command:cmake.activeBuildPresetName}",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [],
+			"detail": "CMake template build task"
+		}
+	]
+}

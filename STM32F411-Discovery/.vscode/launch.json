@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [     
+      {
+        "cwd": "${workspaceFolder}",
+        "executable": "build/debug/build/source/STM32F411-Discovery.elf",
+        "name": "Cortex-Debug",
+        "request": "launch",
+        "type": "cortex-debug",
+        "runToEntryPoint": "main",      
+        "showDevDebugOutput": "none",
+        "servertype": "stlink",
+        "svdPath": "/opt/st/stm32cubeclt/STMicroelectronics_CMSIS_SVD/STM32F411.svd",    
+        "preLaunchTask": "CMake: build"
+      }      
+    ]
+  }

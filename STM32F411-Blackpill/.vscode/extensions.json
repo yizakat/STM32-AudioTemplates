@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "ms-vscode.cmake-tools",  
+    "ms-vscode.vscode-embedded-tools", 
+    "ms-vscode.cpptools",  
+    "twxs.cmake", 
+    "marus25.cortex-debug",
+    "dan-c-underwood.arm",    
+    "trond-snekvik.gnu-mapfiles",
+    "mcu-debug.memory-view",
+    "mcu-debug.peripheral-viewer",
+    "mcu-debug.rtos-views"
+  ]
+}
