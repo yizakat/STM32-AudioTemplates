@@ -24,6 +24,7 @@ Templates are available for the following boards:
 
 - Generic "Blackpill" (STM32F411CEU6)
 - STM32F411-Disco (STM32F411VET6)
+- Nucleo F767ZI (STM32F767ZIT6)
 - (more coming soon)
 
 # CMake
